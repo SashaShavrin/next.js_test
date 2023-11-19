@@ -1,0 +1,87 @@
+@mixin breakpoint($point) {
+    @if $point ==lg {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $point ==md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point ==sm {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xs {
+        @media (max-width: 370px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $point ==xxl {
+        @media (max-width: 1400px) {
+            @content;
+        }
+    }
+}
+
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    font-size: 18px;
+
+    @include breakpoint (md) {
+        width: auto;
+        font-size: 16px;
+    }
+
+}
+
+.link {
+    margin: 0 10px;
+
+    @include breakpoint (sm) {
+        margin: 15px 0;
+        font-size: 30px;
+
+    }
+}
+
+.active {
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.card_img {
+    transition: 0.1s;
+}
+
+.card_img:hover {
+    border-radius: 25px;
+}

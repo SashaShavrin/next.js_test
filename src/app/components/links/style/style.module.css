@@ -1,0 +1,47 @@
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .links {
+    width: auto;
+    font-size: 16px;
+  }
+}
+
+.link {
+  margin: 0 10px;
+}
+@media (max-width: 576px) {
+  .link {
+    margin: 15px 0;
+    font-size: 30px;
+  }
+}
+
+.active {
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.card_img {
+  transition: 0.1s;
+}
+
+.card_img:hover {
+  border-radius: 25px;
+}/*# sourceMappingURL=style.module.css.map */
