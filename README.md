@@ -6,4 +6,13 @@
 - module SCSS
 - NextJS
 
+<b>Маршрутизациятор строится на основе файловой системы. </b>
+
+<b>Данные получаю с WIREMOCK (https://app.wiremock.cloud) </b>
+
+ <b>API:</b>
+ - https://dw9vw.wiremockapi.cloud/pizza
+ - https://dw9vw.wiremockapi.cloud/soup
+ - https://dw9vw.wiremockapi.cloud/cheese
+
 
